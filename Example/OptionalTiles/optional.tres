@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Tile" load_steps=3 format=3 uid="uid://d2romex0savmv"]
+
+[ext_resource type="PackedScene" uid="uid://bjkear1eqbnvw" path="res://Example/OptionalTiles/optional.tscn" id="1_01im6"]
+[ext_resource type="Script" path="res://WorldGen/Tile.gd" id="1_vth6m"]
+
+[resource]
+script = ExtResource("1_vth6m")
+name = "Optional"
+biome = 1
+weight = 8
+repeat = true
+scene = ExtResource("1_01im6")

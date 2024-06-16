@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Region" load_steps=5 format=3 uid="uid://c3ss4jkviodej"]
+
+[ext_resource type="Resource" uid="uid://cab6iqfnnywut" path="res://Example/TerrainTiles/terrain.tres" id="1_uuh8u"]
+[ext_resource type="Resource" uid="uid://d2romex0savmv" path="res://Example/OptionalTiles/optional.tres" id="2_cxw7y"]
+[ext_resource type="Resource" uid="uid://eqkjfqndsiuy" path="res://Example/ProgressionTiles/progression.tres" id="3_ntbkg"]
+[ext_resource type="Script" path="res://WorldGen/Region.gd" id="4_8j3jv"]
+
+[resource]
+script = ExtResource("4_8j3jv")
+progression_rooms = Array[Resource("res://WorldGen/Tile.gd")]([ExtResource("3_ntbkg"), ExtResource("3_ntbkg"), ExtResource("3_ntbkg"), ExtResource("3_ntbkg")])
+optional_rooms = Array[Resource("res://WorldGen/Tile.gd")]([ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y"), ExtResource("2_cxw7y")])
+optional_room_spawn_chance = 0.5
+environment_tiles = Array[Resource("res://WorldGen/Tile.gd")]([ExtResource("1_uuh8u")])
+size_range = Vector2i(12, 18)
+progression_width = 8
+progression_margin = 1
+progression_direction = 1

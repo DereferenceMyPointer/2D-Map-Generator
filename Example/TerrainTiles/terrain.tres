@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Tile" load_steps=3 format=3 uid="uid://cab6iqfnnywut"]
+
+[ext_resource type="Script" path="res://WorldGen/Tile.gd" id="1_6y3sf"]
+[ext_resource type="PackedScene" uid="uid://cnygupreoqwri" path="res://Example/TerrainTiles/terrain.tscn" id="1_kmcdr"]
+
+[resource]
+script = ExtResource("1_6y3sf")
+name = "Terrain"
+biome = 1
+weight = 1
+repeat = true
+scene = ExtResource("1_kmcdr")
